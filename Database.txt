@@ -1,0 +1,16 @@
+create table admin(adminid varchar2(10) primary key,name varchar2(30),email varchar2(40),phone varchar2(12),gender varchar2(10),address varchar2(40),password varchar2(30),status number(2));
+
+create table candidate(candidateid varchar2(10) primary key,wardno varchar2(10),partyname varchar2(20),name varchar2(30), email varchar2(40),phone varchar2(12),age number(2),
+gender varchar2(10),status number(2));
+
+create table electionschedule(electionid varchar2(10) primary key,candidateid varchar2(10),wardno varchar2(10),dateofelection varchar2(10),status number(2));
+
+create table party(partyname varchar2(30) primary key,namedescription varchar2(100),partysymbol varchar2(30),symboldescription varchar2(100),partyemail varchar2(40));
+
+create table userpoll(userid varchar2(20) primary key,wardno varchar2(10),name varchar2(30),email varchar2(40),phone varchar2(12),gender varchar2(10),address varchar2(50),password varchar2(20),
+age number(2),idtype varchar2(20),idnumber varchar2(20),status number(2));
+
+create table vote(userid varchar2(20) primary key,electionid varchar2(10),wardno varchar2(5),candidatename varchar2(20),partyname varchar2(20),votecount number(2));
+
+create table wards(wardno varchar2(10) primary key,wardname varchar2(20),description varchar2(60));
+

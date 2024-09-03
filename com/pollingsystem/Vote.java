@@ -854,8 +854,8 @@ public class Vote extends JFrame implements ActionListener{
 	void mail(String to,String name,String wno,String cnm,String pnm)
 	{
 		  String host="mail.gmail.com";  
-		  final String user="nikhilsoni492@gmail.com";//change accordingly  
-		  final String password="jvojndvdoeazunte";//change accordingly  
+		  final String user="mail Id";//change accordingly  
+		  final String password="password";//change accordingly  
 		    
 		   //Get the session object  
 		   Properties p = new Properties();  
